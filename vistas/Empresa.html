@@ -15,7 +15,7 @@
 </head>
 <body >
 
-    <div class="division" id="division1"> 
+    <div class="division sombreadointenso blureado"  id="division1"> 
         <!-- Modal --> 
         <header>
             <nav class="navbar navbar-expand-lg ">
@@ -44,56 +44,71 @@
                 </div>
               </nav>
         </header>
-        <div class="empresa">
-            <div class="elemento_empresa">
-                <h1>Somos NetGEN</h1>
-                <h2>Especialistas en TRANSFORMACION DIGITAL</h2>
-            </div>
-            <div class="elemento_empresa fondoblanco letranegra">
-                <h1>Desarrollamos producto como servicio </h1>
-                <h3>Con presencia en varias provincias de Argentina, conectamos tecnologías, actores y soluciones. Creamos con cada cliente, productos de software a medida, que solucionan problemas de usuarios reales.</h2>
-            </div>
-            <div class="elemento_empresa empresa_atributos fondoblanco letranegra">
-                <div class="elemento justify-content-center align-items-center">
-                    <div class="row">
-                        <h4>Equipo</h4>
+        <div class="body_clientes d-flex justify-content-center align-items-center">
+            
+            <div class="container">
+                <div class="col  text-center">
+                    <div class="row ">
+                        <img src="../logo/home-green-arrows.svg" alt="flechas" class="  flechas"> 
                     </div>
-                    <div class="row">
-                        <img src="../img/boton.empresa.equipo.png" class="elemento_empresa_icono" alt="">
-                    </div>  
-                    <div class="row">
-                        <h5>Disponemos de un equipo interdisciplinario de profesionales especialistas en distintas tecnologías</h4>
+                    <div class="row mb-2 d-flex justify-content-center align-items-center ">
+                        <h2 id="titulo_empresa">Somos NetGEN</h2>
+                        <h2 id="subtitulo_empresa">Especialistas en TRANSFORMACION DIGITAL</h2>
                     </div>
-                </div>
-                <div class="elemento justify-content-center align-items-center">
-                    <div class="row">
-                        <h4>Tecnologias</h4>
+                    <div class="row  d-flex justify-content-center align-items-center ">
+                        <a href="#contenedor_go">
+                            <button class="boton-redondo" id="boton"></button>
+                        </a>
                     </div>
-                    <div class="row">
-                        <img src="../img/boton.empresa.tecnologias.png" class="elemento_empresa_icono" alt="">
-                    </div> 
-                    <div class="row">
-                        <h5>Nuestro equipo esta en permanente capacitación y actualización
-                            IoT. Seguridad Informática. Business Inteligence. Bases de datos. Inteligencia artificial. Redes. </h4>
-                    </div> 
-                </div>
-                <div class="elemento justify-content-center align-items-center">
-                    <div class="row">
-                        <h4>Ubicacion</h4>
-                    </div>
-                    <div class="row">
-                        <img src="../img/boton.empresa.ubicacion.png" class="elemento_empresa_icono" alt="">
-                    </div>  
-                    <div class="row">
-                        <h5>Tenemos presencia en Buenos Aires, CABA, Mendoza, Córdoba, Entre Ríos y Formosa.</h4>
+                    <div class="row  my-3 d-flex justify-content-center align-items-center">
+                        <img src="../img/flecha-hacia-abajo.png" alt="flechas" class="img-fluid flecha_abajo"> 
                     </div>
                 </div>
-
             </div>
         </div>
-         
+    </div> 
+    <div class="division " id="contenedor_go">
+        <div class="container">
+            <div class="row elemento_empresa fondoblanco letranegra">
+                <div class="col">
+                    <h1>Desarrollamos producto como servicio </h1>
+                    <h3>Con presencia en varias provincias de Argentina, conectamos tecnologías, actores y soluciones. Creamos con cada cliente, productos de software a medida, que solucionan problemas de usuarios reales.</h2>
+                </div>
+            </div>
+            <div class="row elemento_empresa  fondoblanco letranegra">
+                <div class="container">
+                    <div class="row">
+                        <div class="col elemento justify-content-center align-items-center">
+                            <h4>Equipo</h4>
+                            <div class="elemento_empresa_icono">
+                                <img src="../img/boton.empresa.equipo.png" class="elemento_empresa_icono" alt="">
+                            </div>
+                            <h5>Disponemos de un equipo interdisciplinario de profesionales especialistas en distintas tecnologías</h4>
+                        </div>
+                    
+                        <div class="col elemento justify-content-center align-items-center">
+                            <h4>Tecnologias</h4> 
+                            <div class="elemento_empresa_icono">
+                                <img class="elemento_empresa_icono" src="../img/boton.empresa.tecnologias.png "  alt="">
+                            </div>
+                            <h5>Nuestro equipo esta en permanente capacitación y actualización
+                                        IoT. Seguridad Informática. Business Inteligence. Bases de datos. Inteligencia artificial. Redes. </h4>
+                        </div>
+
+                        <div class="col elemento justify-content-center align-items-center">
+                            <h4>Ubicacion</h4>
+                            <div class="elemento_empresa_icono">
+                                <img src="../img/boton.empresa.ubicacion.png" class="elemento_empresa_icono" alt="">    
+                            </div>                      
+                            <h5>Tenemos presencia en Buenos Aires, CABA, Mendoza, Córdoba, Entre Ríos y Formosa.</h4>                               
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
     
-    </div>  
 
         <footer >
             <section class="pie">
@@ -104,6 +119,7 @@
         </footer>
     
     <script src="./js/bootstrap.js"></script>
+    <script src="../js/scripts.js"></script>
 </body>
 <script src="../js/bootstrap.js"></script>
 </html>
