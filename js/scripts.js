@@ -1,6 +1,6 @@
 window.addEventListener('load', function() {
-    console.log("entro")
-    var image = document.getElementById('division1');
-    console.log(image)
-    image.classList.add('limpiado');
+    var images = document.getElementsByClassName('division1');
+    for (var i = 0; i < images.length; i++) {
+        images[i].classList.add('limpiado');
+    }
 });

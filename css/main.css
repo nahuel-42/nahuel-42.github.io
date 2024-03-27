@@ -1,3 +1,20 @@
+/*
+Paleta de colores
+03045e
+0077b6
+00b4d8
+90e0ef
+caf0f8
+
+*/
+.paleta{
+  color: #03045e;
+  color: #0077b6;
+  color: #00b4d8;
+  color: #90e0ef;
+  color: #caf0f8;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -14,24 +31,52 @@
   height: 100vh;
   
 }
+.my-10{
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.lineacirculos{
+  background-image: url('/img/decoraciones/circles-mobile.png');
+  background-size: 30%;
+  background-repeat: repeat-x;
+  height: 110px;
+}
+.lineaflechas{
+  background-image: url('/img/decoraciones/blue-arrows-5.png');
+  background-size: 120%;
+  background-repeat: repeat-x;
+  height: 110px;
 
-#division1{
+}
+
+.contenedor_index_2da_division{
+  height: 400px;
+}
+
+.divisioncirc{
+  background-image: url('/img/fondos/fondo_circulos.png');
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  min-height: 100vh;
+
+}
+.division1{
   background-image: url('/img/fondos/fondo2.jpg');
 
 }
-#division2{
+.division2{
   background-image: url('/img/fondos/fondo3.jpg');
 
 }
-#division3{
+.division3{
   background-image: url('/img/fondos/fondo4.jpg');
 
 }
-#division4{
+.division4{
   background-image: url('/img/fondos/fondo1.jpg');
 
 }
-#division5{
+.division5{
   background-image: url('/img/fondos/fondo5.jpg');
 
 }
@@ -61,6 +106,7 @@
 
 .flechas{
   height: 100px;
+  width: 300px;
   margin-top: 8%;
   margin-bottom: 3%;
   padding: 0;
@@ -90,7 +136,9 @@
 
 
 .fondo_placas{
-  background-color: rgb(31, 40, 63);
+  background-image: linear-gradient(to right, rgb(31, 40, 63),  rgb(80, 89, 113)); /* Degradado lineal de arriba a abajo */
+
+
 }
 
 .whatsapp {
@@ -114,11 +162,13 @@
 }
 
 .whatsapp:hover {
-  background-color: #ffffff;
-  .child {
+  background-color:white;
+  transition: color 0.3s; /* Transición suave */
+}
+
+.whatsapp:hover i{
     color: #25d366;
     transition: color 0.3s; /* Transición suave */
-}
 }
 
 .texto_placas_titulo{
@@ -202,13 +252,25 @@
   margin-top: 35px;
   margin-bottom: 45px;
   padding-top: 15%;
-  border-radius: 3%;
-  background-color: rgb(236, 236, 236);
+  border-radius: 15px;
+  background-color: rgb(255, 255, 255);
   transition: background-color 0.3s;
   min-height: 640px;
+  background-position: top right;
+  background-size: 110%;
+  background-repeat: no-repeat;
+}
+.placa1{
+  background-image: url(../img/decoraciones/fondo-celdas-modelo1.png);
+}
+.placa2{
+  background-image: url(../img/decoraciones/fondo-celdas-modelo2.png);
+}
+.placa3{
+  background-image: url(../img/decoraciones/fondo-celdas-modelo3.png);
 }
 .placas:hover {
-  background-color: #4e52ca;
+  background-image: url(../img/decoraciones/fondo-celdas-modelo2-dark.png);
   color: white;
 }
 
@@ -223,7 +285,7 @@ header {
   z-index: 1;
 }
 header nav .imag__logo {
-  width: 250px;
+  width: 200px;
   margin-left: 25px;
 }
 
@@ -262,65 +324,52 @@ footer h2 {
   color: #333333;
   font-weight: bold;
 }
+.formulario{
+  padding-top: 3%;
+  padding-bottom: 100px;
+  padding-left: 25%;
+  padding-right: 25%;
+  border-top-right-radius: 180px;
 
-.pie {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  justify-content: space-around;
+
+}
+.estilo_imput{
+  border-radius:5px;
 }
 
-.pie__columna {
-  margin: 2rem;
+.estilo_textarea{
+  border-radius:5px;
+  height: 250px;
+  
+
 }
 
-.pie__columna h2 {
-  margin-bottom: 0.5rem;
+.boton_enviar{
+  border-radius: 10px;
+  width: 100px;
+  background-color: #00b4d8;
+  border: 0px ;
 }
 
-.pie__columna .pie__lista {
-  list-style-type: none;
+.boton_enviar:hover{
+  color: black;
+  background-color: #ffffff;
+  border: 1px solid #00b4d8;
 }
-
-.pie__columna .pie__lista .pie__items {
-  text-decoration: none;
-  color: #7A7A7B;
+.titulo_Contacto{
+  font-size: 2rem;
+  max-width: 700px;
+  text-align: center;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 50px;
 }
-
-.pie__apps {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-content: center;
-  border-top: 1px solid #a09c9c;
-  justify-content: space-around;
-  padding: 1.5rem;
-}
-
-.pie__apps .pie__redes {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-}
-
-.pie__apps .pie__redes .pie--iconos {
-  max-height: 45px;
-  padding: 0.4rem;
-}
-
-.pie__apps .pie--aplicaciones {
-  max-height: 40px;
-}
-
-.pie__derechos {
+.pie__derechos{
   border-top: 1px solid #a09c9c;
   text-align: center;
   font-size: 0.8rem;
   padding: 0.4rem;
 }
-
 
 @media only screen and (min-width:320px) and (max-width:768px){
   .whatsapp{
