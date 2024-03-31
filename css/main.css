@@ -25,11 +25,17 @@ caf0f8
 
 .division{
   background-size: cover;
-    background-position: 50% 50%;
+  background-position: 50% 50%;
   background-color: white;
   margin: 0;
   height: 100vh;
-  
+}
+
+.division_sinlimite{
+  background-size: cover;
+  background-position: 50% 50%;
+  background-color: white;
+  margin: 0;
 }
 .my-10{
   margin-top: 10%;
@@ -116,10 +122,10 @@ caf0f8
 }
 
 .flechas{
-  height: 100px;
-  width: 300px;
-  margin-top: 8%;
-  margin-bottom: 3%;
+  height: 200px;
+  width: 200px;
+  margin-top: 1%;
+  margin-bottom: 2%;
   padding: 0;
 }
 
@@ -229,7 +235,8 @@ caf0f8
 }
 
 .imagen_cliente{
-  width: 130px;
+  width: 160px;
+  height: 160px;
 }
 
 
@@ -247,12 +254,14 @@ caf0f8
 .contenedor_empresa {
   background-color: #0077b6;
   text-align: left;
-  padding-top: 2rem;
-  padding-bottom: 1rem;
+  padding-top: 105px;
+  padding-bottom: 105px;
+  text-align: center;
 }
 .subtitulo_empresa2dadiv {
   color: #ffffff;
-  font-size: 2rem;
+  font-size: 3rem;
+  padding-bottom: 1rem;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   margin-left: 4rem;
@@ -285,9 +294,9 @@ caf0f8
 }
 
 .elemento_empresa_icono{
-  width: 100px;
-  height: 100px;
-  margin-bottom: 40px;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px;
 }
 
 .fondoblanco {
@@ -298,15 +307,15 @@ caf0f8
 }
 
 .letranegra{
-  color: black;
+  color: rgb(170, 170, 170);
 }
 
 .placas{
   margin-top: 35px;
   margin-bottom: 45px;
   padding-top: 15%;
-  border-radius: 15px;
   background-color: rgb(255, 255, 255);
+  border: 1px solid black;
   transition: background-color 0.3s;
   min-height: 640px;
   background-position: top right;
@@ -325,6 +334,8 @@ caf0f8
 .placas:hover {
   background-image: url(../img/decoraciones/fondo-celdas-modelo2-dark.png);
   color: white;
+  border: 1px solid #00b4d8;
+  transition:  0.3s ease;
 }
 
 .fila_placas{
