@@ -4,3 +4,4 @@ window.addEventListener('load', function() {
         images[i].classList.add('limpiado');
     }
 });
+
