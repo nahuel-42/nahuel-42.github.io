@@ -3,7 +3,9 @@
 <head>
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/bootstrap-grid.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&family=Raleway:wght@100;200;300;400;500;600&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
@@ -18,32 +20,31 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
-<body>
-    <!-- Boton wpp --> 
+<body >
     <a class="whatsapp" target="_blank"> <i class="fa fa-whatsapp fa-2x whatsapp-icon"></i></a>
     
-    <div class="division division1" > 
-        
+    <div class="division sombreadointenso blureado division1"  > 
+        <!-- Modal --> 
         <header>
             <nav class="navbar navbar-expand-lg ">
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="#"><img class="imag__logo" src="./logo/logo1-blanco.png" alt="Log NetGen"></a>
+                  <a class="navbar-brand" href="../index.html"><img class="imag__logo" src="../logo/logo1-blanco.png" alt="Log NetGen"></a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span><i class="fa-solid fa-bars"></i></span>
                   </button>
                   <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto mb-2 mb-lg-0 align-items-center">
                             <li>
-                                <a class="nav-link menu__link" aria-current="page" href="./vistas/Empresa.html">Empresa</a>
+                                <a class="nav-link menu__link" aria-current="page" href="./Empresa.html">Empresa</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link menu__link" aria-current="page" href="./vistas/Servicios.html ">Servicios</a>
+                                <a class="nav-link menu__link" aria-current="page" href="./Servicios.html ">Servicios</a>
                             </li>
                             <li>
-                                <a class="nav-link menu__link" aria-current="page" href="./vistas/Clientes.html">Clientes</a>
+                                <a class="nav-link menu__link" aria-current="page" href="./Clientes.html">Clientes</a>
                             </li>
                             <li>
-                                <a class="nav-link menu__link" aria-current="page" href="./vistas/Contacto.html">Contacto</a>
+                                <a class="nav-link menu__link" aria-current="page" href="./Contacto.html">Contacto</a>
                             </li>
                             
                         </ul>
@@ -51,25 +52,84 @@
                 </div>
               </nav>
         </header>
-        
-    </div>
-    
-    <div class="division2_index fondoblanco" >
-        <div class="row my-2 lineacirculos">
-        </div> 
-        <div class="contenedor_index_2da_division">
-            <h2>Aca va a ir un texto que diga algo respecto a la empresa</h2>
+        <div class="body_clientes d-flex justify-content-center align-items-center">
+            
+            <div class="container">
+                <div class="col  text-center">
+                    <div class="row d-flex justify-content-center align-items-center ">
+                        <img src="../logo/netgen-negro-sincirculo.png" alt="flechas" class="  flechas"> 
+                    </div>
+                    <div class="row mb-2 d-flex justify-content-center align-items-center ">
+                        <h2 id="titulo_empresa">Somos NetGEN</h2>
+                        <h2 id="subtitulo_empresa">Especialistas en TRANSFORMACION DIGITAL</h2>
+                    </div>
+                    <div class="row  d-flex justify-content-center align-items-center ">
+                        <a href="#contenedor_go">
+                            <button class="boton-redondo" id="boton"></button>
+                        </a>
+                    </div>
+                    <div class="row  my-3 d-flex justify-content-center align-items-center">
+                        <img src="../img/decoraciones/flecha-hacia-abajo.png" alt="flechas" class="img-fluid flecha_abajo"> 
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="row my-2 lineaflechas">
-        </div> 
-    </div>  
+    </div> 
+    <div class="division_sinlimite fondoblanco" id="contenedor_go">
+        <div class="container-fluid">
+            <div class="row  contenedor_empresa  letranegra">
+                <div class="col ">
+                    <h1 class="subtitulo_empresa2dadiv">Desarrollamos producto como servicio </h1>
+                    <h3 class="subtitulo_empresa2dadiv2" >Con presencia en varias provincias de Argentina, conectamos tecnologías, actores y soluciones. Creamos con cada cliente, productos de software a medida, que solucionan problemas de usuarios reales.</h2>
+                </div>
+            </div>
+            <div class="row letranegra">
+                <div class="container">
+                    <div class="row  my-4">
+                        <div class="col elemento justify-content-center align-items-center">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img src="../img/boton.empresa.equipo.v2.png" class="elemento_empresa_icono" alt="">
+                            </div>
+                            <h4 class="titulo_categorias_empresas">Equipo</h4>
+                            
+                            <h5 class="texto_celdas_empresa">Disponemos de un equipo interdisciplinario de profesionales especialistas en distintas tecnologías</h4>
+                        </div>
+                    
+                        <div class="col elemento justify-content-center align-items-center">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img class="elemento_empresa_icono" src="../img/boton.empresa.tecnologias.png "  alt="">
+                            </div>
+                            <h4 class="titulo_categorias_empresas">Tecnologías</h4> 
+                            
+                            <h5 class="texto_celdas_empresa">Nuestro equipo esta en permanente capacitación y actualización
+                                        IoT. Seguridad Informática. Business Inteligence. Bases de datos. Inteligencia artificial. Redes. </h4>
+                        </div>
 
-    <footer >
+                        <div class="col elemento justify-content-center align-items-center">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img src="../img/boton.empresa.ubicacion.png" class="elemento_empresa_icono" alt="">    
+                            </div>   
+                            <h4 class="titulo_categorias_empresas">Ubicación</h4>
+                                               
+                            <h5 class="texto_celdas_empresa">Tenemos presencia en Buenos Aires, CABA, Mendoza, Córdoba, Entre Ríos y Formosa.</h4>                               
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+    
+
+        <footer >
+            <section class="pie">
+            </section>
             <section class="pie__derechos">
                 <p>Copyright © 2005 NetGEN Consulting</p>
             </section>
-    </footer>
+        </footer>
     
     <script src="./js/bootstrap.js"></script>
+    <script src="../js/scripts.js"></script>
 </body>
 </html>
