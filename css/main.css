@@ -169,7 +169,7 @@ caf0f8
   top: 0;
     bottom: 0;
     right: 0;
-    left: 0;
+    left: 0; 
   background: linear-gradient(rgba(14, 15, 14, 0.5), rgba(14, 15, 14, 0.5)); /* Define el degradado opaco */
   /*background: linear-gradient(rgba(73, 90, 105, 0.8), rgba(138, 139, 155, 0.8));  */
   /* background: linear-gradient(rgba(14, 15, 14, 0.5), rgba(14, 15, 14, 0.5));*/
@@ -228,15 +228,15 @@ caf0f8
 }
 
 .texto_placas_titulo{
-  font-size: 2.3rem;
-  font-weight: 600;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family:'Montserrat', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
   
 .texto_placas_cuerpo{
-  font-size: 1.4rem;
+  font-size: 1rem;
   font-weight: 400;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family:'Open Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
   
 
@@ -337,7 +337,7 @@ caf0f8
   color:black;
   font-family: 'Open Sans', sans-serif;
   text-align: center;
-  margin-bottom: 35px;
+  margin-bottom: 15px;
 }
 
 .elemento_empresa_icono{
@@ -360,14 +360,14 @@ caf0f8
 
 .placas{
   margin-top: 35px;
-  margin-bottom: 45px;
-  padding-top: 15%;
+  margin-bottom: 15px;
+  padding-top: 30px;
   background-color: rgb(255, 255, 255);
-  border: 1px solid black;
+  border: 2px solid black;
   transition: background-color 0.3s;
-  min-height: 640px;
+  min-height: 400px;
   background-position: top right;
-  background-size: 110%;
+  background-size: 120%;
   background-repeat: no-repeat;
 }
 .placa1{
@@ -379,12 +379,25 @@ caf0f8
 .placa3{
   background-image: url(../img/decoraciones/fondo-celdas-modelo3.png);
 }
-.placas:hover {
+.placa1:hover{
+  background-image: url(../img/decoraciones/fondo-celdas-modelo1-dark.png);
+}
+.placa2:hover{
   background-image: url(../img/decoraciones/fondo-celdas-modelo2-dark.png);
+}
+.placa3:hover{
+  background-image: url(../img/decoraciones/fondo-celdas-modelo3-dark.png);
+}
+
+
+.placas:hover {
   color: white;
   border: 1px solid #00b4d8;
-  transition:  0.3s ease;
+  transition:  0.4s ease;
 }
+
+
+
 
 .fila_placas{
   margin-left: 5%;
