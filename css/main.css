@@ -285,7 +285,7 @@ caf0f8
   align-items: center; 
 }
 .contenedor_empresa {
-  background: linear-gradient(to bottom, #60b1e3 45%, #ffffff 45%);
+  background: linear-gradient(to bottom, #24a2e6  45%, #ffffff 45%);
 }
 
 .contenedor_titulos_empresa{
@@ -380,13 +380,17 @@ caf0f8
   background-image: url(../img/decoraciones/fondo-celdas-modelo3.png);
 }
 .placa1:hover{
-  background-image: url(../img/decoraciones/fondo-celdas-modelo1-dark.png);
+  background-image: none;
+  background-color: #00599d;
 }
 .placa2:hover{
-  background-image: url(../img/decoraciones/fondo-celdas-modelo2-dark.png);
+  background-image: none;
+  background-color: #00599d;
 }
 .placa3:hover{
-  background-image: url(../img/decoraciones/fondo-celdas-modelo3-dark.png);
+  /*background-image: url(../img/decoraciones/fondo-celdas-modelo3-dark.png);*/
+  background-image: none;
+  background-color: #00599d;
 }
 
 
