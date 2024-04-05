@@ -255,10 +255,7 @@ caf0f8
   cursor: pointer;
   transition: transform 0.3s;
 }
-.blureado {
-  filter: blur(50px); /* Difuminado inicial */
-  transition: filter 0.3s ease-out; /* Transición suave */
-}
+
 .limpiado {
   filter: blur(0); /* Eliminar difuminado */
 }
