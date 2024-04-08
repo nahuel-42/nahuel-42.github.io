@@ -38,7 +38,6 @@ caf0f8
 .division_sinlimite{
   background-size: cover;
   background-position: 50% 50%;
-  background-color: white;
   margin: 0;
 }
 .my-10{
@@ -94,12 +93,77 @@ caf0f8
 #titulo_empresa{
   font-size: 3.5rem;
   color: white;
+  opacity: 0;
 }
 
+#titulo_empresa.visible {
+  opacity: 1 ;
+  transform: scale(0.9);
+  transition: 1.5s ease all;
+}
+#subtitulo_empresa.visible {
+  opacity: 1 ;
+  transform: scale(0.9);
+  transition: 1.5s ease all;
+}
+#tituloplacas_empresa{
+  opacity: 0;
+}
+#placa1_empresa{
+  opacity: 0;
+  transform: translateY(100%);
+}
+#placa2_empresa{
+  opacity: 0;
+  transform: translateY(100%);
+}
+#placa3_empresa{
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+
+#titulo_clientes.visible{
+  opacity: 1;
+  transition: 1.7s ease all;
+}
+
+#titulo_servicios.visible{
+  opacity: 1;
+  transition: 1.7s ease all;
+}
+
+
+
+#placa1_empresa.visible {
+  opacity: 1;
+  transition: 1.7s ease all;
+  transform: translateY(0);
+  transition-delay: 0.4s;
+}
+#placa2_empresa.visible{
+  opacity: 1;
+  transition: 1.7s ease all;
+  transform: translateY(0);
+  transition-delay: 0.9s;
+}
+
+#placa3_empresa.visible{
+  opacity: 1;
+  transition: 1.7s ease all;
+  transform: translateY(0);
+  transition-delay: 1.4s;
+}
+
+#tituloplacas_empresa.visible {
+  opacity: 1 ;
+  transition: 1s ease all;
+}
 #subtitulo_empresa{
   font-size: 1.5rem;
   color: white;
   font-family: "Montserrat", sans-serif;
+  opacity: 0;
 
 }
 
@@ -115,7 +179,8 @@ caf0f8
 }
 
 
-#titulo_clientes{
+
+.titulo_clientes{
   margin-bottom: 43px;
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
@@ -124,12 +189,10 @@ caf0f8
   font-size: 4rem;
   color: white;
   text-align:center;
-
+  opacity: 0;
 }
 
-
-
-.titulo_clientes{
+.contenido_principal_titulo_clientes{
   font-weight: 300;
   font-style: normal;
   font-size: 2.8rem;
@@ -138,7 +201,6 @@ caf0f8
   font-family: Montserrat;
   color: #0077b6;
 }
-
 .subtitulo_clientes{
   margin-bottom: 15px;
   width: 45%;
@@ -253,8 +315,23 @@ caf0f8
   height: 100px;
   font-size: 16px;
   cursor: pointer;
-  transition: transform 0.3s;
 }
+
+@keyframes latido {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 
 .limpiado {
   filter: blur(0); /* Eliminar difuminado */
@@ -410,8 +487,10 @@ header {
   padding: 0.3rem 2rem;
   z-index: 1;
 }
+
+
 header nav .imag__logo {
-  width: 200px;
+  width: 150px;
   margin-left: 25px;
 }
 
@@ -425,15 +504,22 @@ header nav {
 }
 
 header nav .menu__link {
-  font-size: 1.1rem;
+  font-size: 0.8rem;
   text-decoration: none;
   font-weight: bold;
   color: white;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  margin: 4rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  margin: 2rem 3rem 2rem 3rem;
   padding: 0;
+  transition: 0.2s ease all;
 }
+
+header nav .menu__link:hover {
+  color: #0d6efd;
+}
+
+
 
 main {
   min-height: 100vh;
@@ -508,10 +594,57 @@ footer h2 {
   padding: 0.4rem;
 }
 
-@media only screen and (min-width:320px) and (max-width:768px){
-  .whatsapp{
-      width:63px;
-      height:63px;
-      line-height: 66px;
-}
+
+
+@media (max-width: 480px) {
+
+  .boton-redondo {
+    margin-top: 40px;
+    animation: latido 3s infinite;
+  }
+  .subtitulo_empresa2dadiv{
+    margin: 0;
+  }
+
+  .subtitulo_empresa2dadiv2{
+    margin: 0;
+  }
+  .placas{
+    margin: 0;
+
+  }
+  .margin-xgrande{
+    margin: 10px;
+
+  }
+  .texto_celdas_empresa{
+    margin: 45px;
+  }
+  .titulo_categorias_empresas {
+    font-size: 1.9rem;
+  }
+  .placas {
+    margin-bottom: 40px;
+  }
+  .subtitulo_servicios{
+    font-size: 1.5rem;
+  }
+  .contenido_principal_titulo_clientes {
+    font-size: 2rem;
+  }
+  .subtitulo_clientes  {
+    font-size: 1.2rem;
+    width: 80%;
+
+  
+  }
+
+  .formulario  {
+    padding: 10px 10px 50px 10px;
+    border-radius: 0;
+  }
+
+  .titulo_Contacto{
+    padding-top: 60px;
+  }
 }
