@@ -7,9 +7,9 @@
         $cabeceras = 'From: ' . $_POST['Email'] . "\r\n" ;
         $cabeceras .= 'Reply-To: geninfernando@hotmail.com' . "\r\n" ;
         if(mail($destinatario, $asunto, $mensaje, $cabeceras)){
-            header('Location: contacto.html?correo=enviado');
+            header('Location: Contacto.html?correo=enviado');
         } else {
-            header('Location: contacto.html?correo=noenviado');
+            header('Location: Contacto.html?correo=noenviado');
         }
         exit;
     }
