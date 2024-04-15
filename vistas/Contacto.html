@@ -54,7 +54,15 @@
             <h2 class="titulo_Contacto">¿Listo para llevar tu negocio al siguiente nivel? </h2>
             <spam class="subtitulo_Contacto">Déjanos ayudarte a impulsar tu empresa con nuestras soluciones tecnológicas</spam>
         </div>
-        <form action="https://formspree.io/f/xgegpewv" method="POST" class="formulario fondoblanco">
+        <form action="./correo.php" method="post" class="formulario fondoblanco">
+            <div id="mensaje-enviado" style="display: none;">
+                <h3 class="text-light">Gracias por su mensaje!  <i class="fa-regular fa-face-smile"></i></h3>
+                <span class="text-light">A la brevedad le estaremos contactando.</span>
+            </div>
+            <div id="mensaje-no-enviado" style="display: none;">
+                <h3 class="text-light">Algo salio mal!   <i class="fa-regular fa-face-sad-tear"></i></h3>
+                <span class="text-light">Verifique los campos, o puede contactarnos a traves de Whatsapp</span>
+            </div>
             <h2 class="mt-4 mb-5">Contáctanos</h2>
             <div class="container  ">
                 <div class="row">
@@ -95,10 +103,13 @@
                 </div>
             </div>
             <div class="d-grid gap-2 d-md-flex justify-content-md-end ">
-                <button class="btn btn-primary me-md-2 boton_enviar" type="submit">Enviar</button>
+                <button class="btn btn-primary me-md-2 boton_enviar" type="submit" name= "enviar">Enviar</button>
             </div>
+            
+
         </form>
         
+    
     </div>  
 
     
@@ -112,6 +123,16 @@
     </footer>
     
     <script src="./js/bootstrap.js"></script>
+    <script>
+        var urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('correo') === 'enviado') {
+            document.getElementById('mensaje-enviado').style.display = 'block';
+            console.log('enviado')
+        } else if (urlParams.get('correo') === 'noenviado') {
+            document.getElementById('mensaje-no-enviado').style.display = 'block';
+            console.log('noenviado')
+        }
+    </script>
 </body>
 <script src="../js/bootstrap.js"></script>
 </html>
