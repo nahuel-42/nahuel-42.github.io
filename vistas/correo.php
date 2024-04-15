@@ -10,7 +10,6 @@
         } else {
             header('Location: contacto.html?correo=noenviado');
         }
-        
         exit;
     }
 ?>
