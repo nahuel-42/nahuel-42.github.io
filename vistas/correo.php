@@ -92,11 +92,11 @@
             </ul>
         </body>
         </html>';
-        $destinatario = "nievas.nahuel.1998@gmail.com";
+        $destinatario = "nievas.nahuel.1998@gmail.com, geninfernando@hotmail.com";
         $cabeceras = 'From: netgen@example.com' . "\r\n" ;
         $cabeceras .= 'Reply-To: nievas.nahuel.1998@gmail.com' . "\r\n" ;
         $cabeceras .= 'MIME-Version: 1.0' . "\r\n";
-	    $cabeceras .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+	    $cabeceras .= 'Content-type: text/html; charset=UTF-8' . "\r\n";
 
         if(mail($destinatario, $asunto, $mensaje, $cabeceras)){
             header('Location: Contacto.html?correo=enviado');
