@@ -4,7 +4,7 @@
         $name = $_POST['name'];
         $message= $_POST['message'];
         $telefono = $_POST['telefono'];
-
+        $asunto = "Nueva Consulta de Netgen.com.ar";
         $mensaje = '<html lang="en">
         <head>
             <meta charset="UTF-8">
@@ -92,7 +92,7 @@
             </ul>
         </body>
         </html>';
-        $destinatario = "nievas.nahuel.1998@gmail.com, geninfernando@hotmail.com";
+        $destinatario = "nievas.nahuel.1998@gmail.com, geninfernando@gmail.com";
         $cabeceras = 'From: netgen@example.com' . "\r\n" ;
         $cabeceras .= 'Reply-To: nievas.nahuel.1998@gmail.com' . "\r\n" ;
         $cabeceras .= 'MIME-Version: 1.0' . "\r\n";
