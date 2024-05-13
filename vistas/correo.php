@@ -1,5 +1,5 @@
 <?php
-    if(isset($_POST['enviar'])){
+    if(isset($_POST['enviar']) && empty($_POST['empresa']) ){
         $email = $_POST['Email'];
         $name = $_POST['name'];
         $message= $_POST['message'];
@@ -101,9 +101,12 @@
         if(mail($destinatario, $asunto, $mensaje, $cabeceras)){
             header('Location: Contacto.html?correo=enviado');
         } else {
-            header('Location: Contacto.html?correo=error');
+            header('Location: Contacto.html?correo=noenviado');
         }
         exit;
+    }
+    else{
+        header('Location: Contacto.html?correo=enviado');
     }
 ?>
         
